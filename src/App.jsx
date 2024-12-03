@@ -1,3 +1,4 @@
+import Accordion from "./components/accordion/AccordionList"
 
 function App() {
   return (
@@ -5,7 +6,9 @@ function App() {
       <div>
         ciao
       </div>
-
+      <div>
+        <Accordion />
+      </div>
     </>
   )
 }
