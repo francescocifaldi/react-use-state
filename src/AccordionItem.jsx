@@ -1,8 +1,9 @@
-export default function AccordionItem() {
+export default function AccordionItem({ language }) {
+    const { id, title } = language
     return (
         <>
             <div>
-                accordion item
+                {title}
             </div>
         </>
     )

@@ -8,14 +8,14 @@ export default function AccordionList() {
                 accordion list
             </div>
 
-            <div>
-                {languages.map((language) => {
-                    <div key={language.id}>
-                        item
-                    </div>
-                })}
+            <ul>
+                {languages.map((language) => (
+                    <li key={language.id}>
+                        <AccordionItem language={language} />
+                    </li>
+                ))}
 
-            </div>
+            </ul>
             {
                 console.log(typeof (languages))
             }
