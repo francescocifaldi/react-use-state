@@ -1,7 +1,12 @@
+import { useState } from "react"
 import AccordionItem from "../../AccordionItem"
 import languages from "../../languages.js"
 
 export default function AccordionList() {
+    const [selected, setSelected] = useState(false)
+    function show() {
+        console.log('clicco')
+    }
     return (
         <>
             <div>
@@ -11,15 +16,11 @@ export default function AccordionList() {
             <ul>
                 {languages.map((language) => (
                     <li key={language.id}>
-                        <AccordionItem language={language} />
+                        <AccordionItem onClick={show} language={language} />
                     </li>
                 ))}
 
             </ul>
-            {
-                console.log(typeof (languages))
-            }
-
         </>
     )
 }

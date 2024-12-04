@@ -1,9 +1,12 @@
-export default function AccordionItem({ language }) {
-    const { id, title } = language
+export default function AccordionItem({ language, onClick, }) {
+    const { id, title, description } = language
     return (
         <>
-            <div>
+            <div onClick={onClick}>
                 {title}
+            </div>
+            <div>
+                {description}
             </div>
         </>
     )
