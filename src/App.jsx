@@ -13,7 +13,7 @@ function App() {
           <h1>Learn Web Dev</h1>
         </div>
         <div className="container">
-          <div>
+          <div className="myList">
             {languages.map((language) => (
               <Button key={language.id} item={language} />
             ))}

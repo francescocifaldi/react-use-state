@@ -1,0 +1,17 @@
+.btn,
+.selected {
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    padding: 0 20px
+}
+
+.btn {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.selected {
+    background-color: #FFC107;
+    color: black;
+}
