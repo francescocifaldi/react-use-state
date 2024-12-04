@@ -4,7 +4,7 @@ import Content from "./components/Content"
 import languages from "./languages"
 
 function App() {
-  const [selected, setSelected] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   return (
     <>
@@ -14,12 +14,12 @@ function App() {
         </div>
         <div className="container">
           <div className="myList">
-            {languages.map((language) => (
-              <Button key={language.id} item={language} />
+            {languages.map((language, i) => (
+              <Button key={language.id} item={language} callback={() => setCurrentIndex(i)} />
             ))}
           </div>
           <div>
-            <Content item={languages[0]} />
+            <Content item={languages[currentIndex]} />
           </div>
         </div>
       </main>

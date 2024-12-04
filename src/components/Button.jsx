@@ -1,8 +1,8 @@
 import style from "./Button.module.css"
 
-export default function Button({ item }) {
+export default function Button({ item, callback = () => { } }) {
     const { id, title } = item
     return (
-        <button className={style.btn}>{title}</button>
+        <button onClick={callback} className={style.btn}>{title}</button>
     )
 }
