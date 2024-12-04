@@ -2,7 +2,6 @@ import { useState } from "react"
 import Button from "./components/Button"
 import Content from "./components/Content"
 import languages from "./languages"
-import buttonStyle from "./components/Button.module.css"
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -16,7 +15,7 @@ function App() {
         <div className="container">
           <div className="myList">
             {languages.map((language, i) => (
-              <Button key={language.id} item={language} callback={() => setCurrentIndex(i)} className={i === currentIndex ? buttonStyle.selected : ''} />
+              <Button key={language.id} item={language} callback={() => setCurrentIndex(i)} active={i === currentIndex} />
             ))}
           </div>
           <div>
