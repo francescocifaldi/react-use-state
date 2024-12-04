@@ -1,5 +1,5 @@
 
-import AccordionItem from "../../AccordionItem"
+import AccordionItem from "./AccordionItem.jsx"
 import languages from "../../languages.js"
 
 export default function AccordionList() {
