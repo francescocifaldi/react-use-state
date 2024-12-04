@@ -1,26 +1,23 @@
-import { useState } from "react"
+
 import AccordionItem from "../../AccordionItem"
 import languages from "../../languages.js"
 
 export default function AccordionList() {
-    const [selected, setSelected] = useState(false)
-    function show() {
-        console.log('clicco')
-    }
+
     return (
         <>
             <div>
                 accordion list
             </div>
 
-            <ul>
+            <div>
                 {languages.map((language) => (
-                    <li key={language.id}>
-                        <AccordionItem onClick={show} language={language} />
-                    </li>
+                    <div key={language.id}>
+                        <AccordionItem language={language} />
+                    </div>
                 ))}
 
-            </ul>
+            </div>
         </>
     )
 }
