@@ -1,4 +1,5 @@
 import AccordionItem from "../../AccordionItem"
+import languages from "../../languages.js"
 
 export default function AccordionList() {
     return (
@@ -6,9 +7,19 @@ export default function AccordionList() {
             <div>
                 accordion list
             </div>
+
             <div>
-                <AccordionItem />
+                {languages.map((language) => {
+                    <div key={language.id}>
+                        item
+                    </div>
+                })}
+
             </div>
+            {
+                console.log(typeof (languages))
+            }
+
         </>
     )
 }
