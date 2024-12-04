@@ -1,11 +1,14 @@
-import AccordionItem from "./AccordionItem"
-import langs from '../../languages'
+import AccordionItem from "../../AccordionItem"
 
-export default function Accordion() {
+export default function AccordionList() {
     return (
         <>
-            <div>Accordion List</div>
-            <div><AccordionItem /></div>
+            <div>
+                accordion list
+            </div>
+            <div>
+                <AccordionItem />
+            </div>
         </>
     )
 }

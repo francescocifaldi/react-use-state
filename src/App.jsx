@@ -1,14 +1,15 @@
-import Accordion from "./components/accordion/AccordionList"
-
+import AccordionList from "./components/accordion/AccordionList"
 function App() {
+
   return (
     <>
       <div>
-        ciao
+        prova
       </div>
       <div>
-        <Accordion />
+        <AccordionList />
       </div>
+
     </>
   )
 }
