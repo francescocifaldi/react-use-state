@@ -11,3 +11,8 @@
 .debug {
   border: 2px red dotted;
 }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
